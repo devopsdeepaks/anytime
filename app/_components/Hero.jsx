@@ -2,6 +2,8 @@
 import React from 'react'
 import GridDistortion from '@/GridDistortion/GridDistortion'
 import FuzzyText from '@/components/blurtext'
+// import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -10,7 +12,7 @@ const Hero = () => {
             <GridDistortion
                 // imageSrc="https://picsum.photos/1920/1080?grayscale"
                 // imageSrc="public\car.jpg"
-                imageSrc="/car.jpg"
+                imageSrc="/newcar.jpg"
                 grid={100}
                 mouse={0.1}
                 strength={0.15}
@@ -22,30 +24,45 @@ const Hero = () => {
                     Welcome to the Wild Side
                 </h1> */}
 
-                <FuzzyText
-                    baseIntensity={0.2}
-                    fontSize="clamp(1rem, 5vw, 5rem)"
+                <h1
+                    // style={{ fontFamily: 'Tagesschrift, sans-serif' }}
+                    // baseIntensity={0.2}
+                    // fontSize="clamp(1.5rem, 7.5vw, 7.5rem)"
+                    style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
+                    className=' text-white text-7xl  text-center drop-shadow-md'
                 >
-                    Any Time Driver
-                </FuzzyText>
+                    Your <b>Ride</b> Awaits at <br />
+                    <b> Any Time Driver and Taxi <br /> Service</b>
+                </h1>
 
 
 
-                <FuzzyText
-                    baseIntensity={0.2}
-                    fontSize="clamp(1rem, 5vw, 5rem)"
+                {/* <h1
+                    // style={{ fontFamily: 'Tagesschrift, sans-serif' }}
+                    // baseIntensity={0.2}
+                    // fontSize="clamp(1.5rem, 7.5vw, 7.5rem)"
+                    className='roboto-slab text-white text-8xl font-bold text-center drop-shadow-md'
                 >
                     and Taxi Service
-                </FuzzyText>
-                <h1 className='text-white text-2xl mt-5 font-bold'>Your Ride Awaits!!!</h1>
+                </h1> */}
+                <h1 className='text-white text-3xl mt-5 font-bold'>Your Next Taxi Is Just a Tap Away.</h1>
+                <button
+                    type="button"
+                    className="mt-4 flex items-center space-x-2 px-6 py-3 rounded-4xl bg-white text-black font-medium border border-gray-200 hover:bg-gray-100 transition-colors duration-200"
+
+                >
+                    <span className="tracking-wider">Get a Taxi </span>
+                    <ArrowRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
+                </button>
 
             </div>
 
+            {/* 
             <div className="absolute bottom-0 right-0 bg-white px-8 py-6 rounded-tl-[40px] shadow-lg">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black font-bold text-lg">
                     +91-9953384424
                 </span>
-            </div>
+            </div> */}
         </div>
     )
 }
