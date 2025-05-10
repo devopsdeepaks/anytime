@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Geist, Geist_Mono, Roboto_Slab } from "next/font/google";
+import { Roboto_Slab } from "next/font/google";
 
 const robotoSlab = Roboto_Slab({
   variable: "--font-roboto-slab",
