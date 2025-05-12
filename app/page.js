@@ -10,6 +10,8 @@ import AboutUsSection from "./_components/About";
 import LensDemoThird from "./_components/collections";
 import HowItWorksSection from "./_components/HowitWorks";
 import { Testimonials } from "./_components/Testimonials";
+import ContactUsCard from "./_components/Contact";
+import Footer from "./_components/Footer";
 export default function Home() {
   const textt =
     "At Your Ride Awaits at Any Time Driver and Taxi Service we offer a seamless and reliable car driver and taxi service designed to make your travel experience smooth, safe, and convenient. Whether you need a professional driver for your personal vehicle or a comfortable taxi for your daily commute. our team of trained and verified drivers is always ready to serve you. With 24/7 availability, transparent pricing, and instant booking, we ensure that every ride is stress-free and tailored to your needs. ";
@@ -33,6 +35,8 @@ Need a driver or taxi? Just message us here"
       <LensDemoThird />
       <HowItWorksSection />
       <Testimonials />
+      <ContactUsCard />
+      <Footer />
     </div>
   );
 }
