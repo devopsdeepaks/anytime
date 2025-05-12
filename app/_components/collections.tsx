@@ -2,17 +2,11 @@
 import { useState } from "react";
 import { Lens } from "@/components/lenscard";
 import { motion } from "framer-motion";
-
-interface Car {
-  id: number;
-  logo: string;
-  name: string;
-  subtitle: string;
-  image: string;
-}
-
+import CarLensCard from "./CarLensCard";
 export default function LensDemoThird() {
-  const cars: Car[] = [
+  // const [hovering, setHovering] = useState(false);
+
+  const cars = [
     {
       id: 1,
       logo: "/logo1.png",
@@ -87,45 +81,46 @@ export default function LensDemoThird() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cars.map((car) => (
-          <Lens key={car.id}>
-            <motion.div
-              className="bg-white border border-gray-200
- rounded-xl shadow-md overflow-hidden"
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 20px 25px rgba(0,0,0,0.1)",
-              }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              {/* Header */}
-              <div className="flex items-center space-x-3 p-4">
-                <img
-                  src={car.logo}
-                  alt={`${car.name} logo`}
-                  className="h-6 w-6 object-contain"
-                />
-                <div>
-                  <h3
-                    style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
-                    className="text-lg font-semibold text-[#262626]"
-                  >
-                    {car.name}
-                  </h3>
-                  <p className="text-sm text-gray-500">{car.subtitle}</p>
-                </div>
-              </div>
+          //           <Lens key={car.id}>
+          //             <motion.div
+          //               className="bg-white border border-gray-200
+          //  rounded-xl shadow-md overflow-hidden"
+          //               whileHover={{
+          //                 scale: 1.03,
+          //                 boxShadow: "0 20px 25px rgba(0,0,0,0.1)",
+          //               }}
+          //               transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          //             >
+          //               {/* Header */}
+          //               <div className="flex items-center space-x-3 p-4">
+          //                 <img
+          //                   src={car.logo}
+          //                   alt={`${car.name} logo`}
+          //                   className="h-6 w-6 object-contain"
+          //                 />
+          //                 <div>
+          //                   <h3
+          //                     style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
+          //                     className="text-lg font-semibold text-[#262626]"
+          //                   >
+          //                     {car.name}
+          //                   </h3>
+          //                   <p className="text-sm text-gray-500">{car.subtitle}</p>
+          //                 </div>
+          //               </div>
 
-              {/* Image */}
-              <div className="px-4 pb-4">
-                <img
-                  src={car.image}
-                  alt={car.name}
-                  className="w-full rounded-lg object-cover"
-                  style={{ aspectRatio: "16/9" }}
-                />
-              </div>
-            </motion.div>
-          </Lens>
+          //               {/* Image */}
+          //               <div className="px-4 pb-4">
+          //                 <img
+          //                   src={car.image}
+          //                   alt={car.name}
+          //                   className="w-full rounded-lg object-cover"
+          //                   style={{ aspectRatio: "16/9" }}
+          //                 />
+          //               </div>
+          //             </motion.div>
+          //           </Lens>
+          <CarLensCard key={car.id} car={car} />
         ))}
       </div>
     </div>
