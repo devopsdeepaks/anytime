@@ -14,7 +14,7 @@ import ContactUsCard from "./_components/Contact";
 import Footer from "./_components/Footer";
 export default function Home() {
   const textt =
-    "At Your Ride Awaits at Any Time Driver and Taxi Service we offer a seamless and reliable car driver and taxi service designed to make your travel experience smooth, safe, and convenient. Whether you need a professional driver for your personal vehicle or a comfortable taxi for your daily commute. our team of trained and verified drivers is always ready to serve you. With 24/7 availability, transparent pricing, and instant booking, we ensure that every ride is stress-free and tailored to your needs. ";
+    "At Any Time Driver and Taxi Service, we provide dependable, 24/7 car driver and taxi solutions tailored for your comfort and convenience. Whether you're looking for a professional driver for your personal vehicle or a well-maintained taxi for daily commutes, special occasions, or outstation travel — we’ve got you covered. ";
   return (
     <div className=" flex flex-col justify-center items-center overflow-x-hidden">
       {/* <h1>Hello</h1> */}

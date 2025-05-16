@@ -8,28 +8,28 @@ const steps = [
         icon: <Car className="h-8 w-8 text-gray-700" />,
         title: "Choose Your Car",
         description:
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.",
+            "Browse through our wide range of vehicles and pick the one that suits your journey best.",
     },
     {
         id: 2,
         icon: <MessageCircle className="h-8 w-8 text-gray-700" />,
         title: "Submit Enquiry",
         description:
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.",
+            "Give us a call or Message Us to let us know your preferences.",
     },
     {
         id: 3,
         icon: <Clipboard className="h-8 w-8 text-gray-700" />,
-        title: "Finalize Paperwork",
+        title: "Choose Your Driver",
         description:
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.",
+            "Select from our trusted network of trained and verified drivers.",
     },
     {
         id: 4,
         icon: <Navigation className="h-8 w-8 text-gray-700" />,
         title: "Hit The Road",
         description:
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.",
+            "Select from our trusted network of trained and verified drivers.",
     },
 ];
 
@@ -48,11 +48,12 @@ export default function HowItWorksSection() {
                         The easiest way to  find your next car
                     </h2>
                     <p className="inter text-gray-700">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
+                        Finding the right ride shouldn't be complicated — and with us, it isn’t. We’ve simplified the process to just a few easy steps so you can get on the road faster.
                     </p>
-                    <button className="inline-block bg-[#262626] text-white uppercase tracking-wide font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-800 transition">
-                        Get Started
-                    </button>
+                    <a href="tel:+91-9953384424">
+                        <button className="inline-block bg-[#262626] text-white uppercase tracking-wide font-semibold px-6 py-3 mb-2 rounded-md shadow-md hover:bg-gray-800 transition">
+                            Get Started
+                        </button></a>
                     <p style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }} className="text-2xl sm:text-3xl font-bold
     bg-gradient-to-r
       from-[#262626]

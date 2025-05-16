@@ -2,6 +2,12 @@ import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <footer className="bg-[#262626] w-full text-white py-12 px-12 rounded-3xl max-w-7xl mx-auto mt-12 shadow-lg">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
@@ -17,13 +23,13 @@ export default function Footer() {
                 </div>
 
                 {/* Right: App Download (commented out) */}
-                {/* <div className="flex flex-col items-center lg:items-end gap-3">
-          <p className="text-sm mb-2">Get the App</p>
-          <div className="flex gap-2">
-            <img src="/google-play-badge.png" alt="Google Play" className="h-10" />
-            <img src="/app-store-badge.png" alt="App Store" className="h-10" />
-          </div>
-        </div> */}
+                <div className="flex flex-col items-center lg:items-end gap-3">
+                    {/* <p className="text-sm text-right mb-2">Address</p> */}
+
+
+                    <span className=" text-sm text-gray-300">Shop No. 1, Nehwal Complex,<br /> Gangapuram, Vishnu Enclave, Govindpuram,<br /> Ghaziabad, UP - 201001</span>
+
+                </div>
             </div>
 
             {/* Nav Links */}
@@ -31,13 +37,17 @@ export default function Footer() {
 
             <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm">
                 <div className="flex gap-6 flex-wrap justify-center lg:justify-start">
-                    {['Home', 'Services', 'About Us', 'Contact'].map((item) => (
+                    {[{ label: 'Home', link: 'home' },
+                    { label: 'About', link: 'about' },
+                    { label: 'Showroom', link: 'showcase' },
+                    { label: 'Contact', link: 'contact' }].map((item) => (
                         <a
-                            key={item}
-                            href="#"
+                            key={item.label}
+                            // href={item.link}
+                            onClick={() => scrollToSection(item.link)}
                             className="hover:underline hover:text-gray-200 transition"
                         >
-                            {item}
+                            {item.label}
                         </a>
                     ))}
                 </div>
@@ -53,7 +63,7 @@ export default function Footer() {
 
             {/* Bottom Text */}
             <div className="text-xs text-gray-400 text-center mt-6">
-                © {new Date().getFullYear()} PureWashr. All rights reserved.
+                © {new Date().getFullYear()} Any Time Driver and Taxi Service. All rights reserved.
             </div>
         </footer>
     );

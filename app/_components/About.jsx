@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUsSection = () => {
     return (
-        <div className="bg-[#1A1A1A] text-white rounded-3xl shadow-lg shadow-black/50  p-10 sm:p-20 md:flex justify-between items-center max-w-6xl mx-auto mt-10">
+        <div id="about" className="bg-[#1A1A1A] text-white rounded-3xl shadow-lg shadow-black/50  p-10 sm:p-20 md:flex justify-between items-center max-w-6xl mx-auto mt-10">
             {/* Left Content */}
             <div className="md:w-1/2 space-y-4">
                 <p style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }} className="text-sm font-bold uppercase text-gray-300">About Us</p>
@@ -12,9 +12,7 @@ const AboutUsSection = () => {
                     Focused on Your Needs
                 </h2>
                 <p className="text-gray-400 md:w-2/3 text-sm leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    varius enim in eros elementum tristique. Duis cursus, mi viverra
-                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    At Any Time Driver and Taxi Service, our journey is powered by a deep love for automobiles and an unwavering commitment to our clients. With over 1,000 happy clients and a network of 500+ skilled drivers, we’re not just moving people — we’re building trust, reliability, and comfort.
                 </p>
             </div>
 
@@ -57,7 +55,7 @@ const AboutUsSection = () => {
                             className="count-up-text"
                         />+
                     </h3>
-                    <p className="syne text-sm uppercase text-gray-400 mt-1">Cars in Stock</p>
+                    <p className="syne text-sm uppercase text-gray-400 mt-1">Vehicles in Stock</p>
                 </div>
                 <div className="bg-[#252525] p-6 rounded-br-2xl">
                     <h3 style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }} className="text-2xl ">

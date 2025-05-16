@@ -5,7 +5,7 @@ import { ConfettiButton } from '@/components/confetti'
 export default function ContactUsCard() {
     const phoneNumber = '+91-9953384424';
     return (
-        <div className="max-w-7xl w-full mt-20 mx-auto bg-[#F6F6F6] rounded-xl p-20 shadow-md hover:shadow-lg items-center justify-center transition-shadow">
+        <div id='contact' className="max-w-7xl w-full mt-4  sm:mt-20 mx-auto bg-[#F6F6F6] rounded-2xl p-20 shadow-md hover:shadow-lg items-center justify-center transition-shadow">
             <div className="flex flex-col items-center space-y-4">
                 {/* Logo */}
                 <img src='/mainlogo.png' alt="Any Time Driver and Taxi Service Logo" className="h-40 w-auto" />
@@ -16,7 +16,7 @@ export default function ContactUsCard() {
                 {/* Phone Button */}
                 <a
                     href={`tel:${phoneNumber}`}
-                    className="inline-block bg-[#393939] text-gray-200 text-5xl font-semibold px-12 py-2 rounded-full ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow"
+                    className="inline-block bg-[#393939] text-gray-200 text-2xl sm:text-5xl font-semibold px-12 py-2 rounded-full ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow"
                 >
                     <ConfettiButton>{phoneNumber}</ConfettiButton>
 

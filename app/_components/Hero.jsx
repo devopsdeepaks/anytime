@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
     return (
 
-        <div style={{ width: '95%', height: '650px', position: 'relative' }}>
+        <div id='home' style={{ width: '95%', height: '650px', position: 'relative' }}>
             <GridDistortion
                 // imageSrc="https://picsum.photos/1920/1080?grayscale"
                 // imageSrc="public\car.jpg"
@@ -19,7 +19,7 @@ const Hero = () => {
                 relaxation={0.9}
                 className="mt-4 rounded-4xl z-0"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
+            <div className="absolute p-4 sm:p-0 inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
                 {/* <h1 className="text-white text-4xl font-bold text-center drop-shadow-md">
                     Welcome to the Wild Side
                 </h1> */}
@@ -29,7 +29,7 @@ const Hero = () => {
                     // baseIntensity={0.2}
                     // fontSize="clamp(1.5rem, 7.5vw, 7.5rem)"
                     style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
-                    className=' text-white text-7xl  text-center drop-shadow-md'
+                    className=' text-white text-4xl sm:text-7xl  text-center drop-shadow-md'
                 >
                     Your <b>Ride</b> Awaits at <br />
                     <b> Any Time Driver and Taxi <br /> Service</b>
@@ -45,14 +45,13 @@ const Hero = () => {
                 >
                     and Taxi Service
                 </h1> */}
-                <h1 className='text-white text-3xl mt-5 font-bold'>Your Next Taxi Is Just a Tap Away.</h1>
+                <h1 className='text-white text-xl sm:text-3xl mt-5 font-bold'>Your Next Taxi Is Just a Tap Away.</h1>
                 <button
                     type="button"
                     className="mt-4 flex items-center space-x-2 px-6 py-3 rounded-4xl bg-white text-black font-medium border border-gray-200 hover:bg-gray-100 transition-colors duration-200"
 
                 >
-                    <span className="tracking-wider">Get a Taxi </span>
-                    <ArrowRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
+                    <span className="tracking-wider">Explore Now </span>
                 </button>
 
             </div>

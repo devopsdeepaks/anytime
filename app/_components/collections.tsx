@@ -52,17 +52,19 @@ export default function LensDemoThird() {
   ];
 
   return (
-    <div className="max-w-6xl container mx-auto px-4 py-20">
+    <div id="showcase" className="max-w-6xl container mx-auto px-4 py-20">
       <div className="flex flex-row justify-between items-center mb-8">
         <h1
           style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
-          className="text-5xl  text-[#262626]"
+          className="text-4xl sm:text-5xl text-[#262626]"
         >
           Cars at your Convenience
         </h1>
-        <button
-          className="
-    w-full sm:w-auto            
+        <a href="tel:+91-9953384424">
+          <button
+            className="
+    w-full sm:w-auto 
+    hidden sm:block           
     bg-[#262626]                 
     text-white uppercase       
     tracking-widest             
@@ -74,9 +76,10 @@ export default function LensDemoThird() {
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700
     transition                  
   "
-        >
-          BOOK NOW
-        </button>
+          >
+            BOOK NOW
+          </button>
+        </a>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

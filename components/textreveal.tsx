@@ -24,11 +24,14 @@ export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
   return (
     <div
       ref={targetRef}
-      className={cn("max-w-6xl  relative z-0 mt-20 mb-10    ", className)}
+      className={cn(
+        "max-w-6xl  hidden sm:block relative z-0 mt-20 mb-10    ",
+        className
+      )}
     >
       <div
         className={
-          "sticky top-0 mx-auto flex h-[50vh]  items-center bg-transparent px-[1rem] py-[1rem]"
+          "sticky  top-0 mx-auto flex h-[50vh]  items-center bg-transparent px-[1rem] py-[1rem]"
         }
       >
         <span
