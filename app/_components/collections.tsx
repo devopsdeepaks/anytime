@@ -49,6 +49,27 @@ export default function LensDemoThird() {
       subtitle: "LUGGAGE · CARGO",
       image: "/car6.webp",
     },
+    {
+      id: 7,
+      logo: "/dl.jpg",
+      name: "Driver on Demand",
+      subtitle: "PROFESSIONAL · FLEXIBLE",
+      image: "/driver1.jpg",
+    },
+    {
+      id: 8,
+      logo: "/dl.jpg",
+      name: "Outstation Driver",
+      subtitle: "RELIABLE · LONG DISTANCE",
+      image: "/driver2.avif",
+    },
+    {
+      id: 9,
+      logo: "/dl.jpg",
+      name: "Driver for Daily",
+      subtitle: "SAFE · PUNCTUAL",
+      image: "/driver3.jpg",
+    },
   ];
 
   return (

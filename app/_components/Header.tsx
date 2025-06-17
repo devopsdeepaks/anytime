@@ -17,13 +17,13 @@ export default function Navbar() {
         <div className="px-2 sm:px-10 py-1.5 sm:py-4 rounded-[6px] sm:rounded-[12px] border border-white flex items-center gap-2 sm:gap-12">
           {/* <div className="w-6 h-6 rounded-full border border-white/20" /> */}
           <div className="w-4 sm:w-8 h-4 sm:h-8 rounded-full border border-white/20">
-            {/* <Image
-                            src={groupIcon}
-                            alt="Logo"
-                            width={48}
-                            height={48}
-                            className="opacity-80"
-                        /> */}
+            <Image
+              src="/mainlogog.png"
+              alt="Logo"
+              width={48}
+              height={48}
+              className="opacity-80"
+            />
           </div>
 
           <div className="flex items-center gap-1.5 sm:gap-6 text-white/80 font-mono text-[10px] sm:text-sm">
