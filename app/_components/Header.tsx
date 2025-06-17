@@ -18,11 +18,11 @@ export default function Navbar() {
           {/* <div className="w-6 h-6 rounded-full border border-white/20" /> */}
           <div className="w-4 sm:w-8 h-4 sm:h-8 rounded-full border border-white/20">
             <Image
-              src="/mainlogog.png"
+              src="/anytimelogo.png"
               alt="Logo"
               width={48}
               height={48}
-              className="opacity-80"
+              className="opacity-80 rounded-full"
             />
           </div>
 
