@@ -77,7 +77,7 @@ export default function LensDemoThird() {
       <div className="flex flex-row justify-between items-center mb-8">
         <h1
           style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }}
-          className="text-4xl sm:text-5xl text-[#262626]"
+          className="text-4xl sm:text-5xl text-[#262626] dark:text-white"
         >
           Cars at your Convenience
         </h1>
@@ -86,14 +86,14 @@ export default function LensDemoThird() {
             className="
     w-full sm:w-auto 
     hidden sm:block           
-    bg-[#262626]                 
-    text-white uppercase       
+    bg-[#262626] dark:bg-white                 
+    text-white dark:text-[#262626] uppercase       
     tracking-widest             
     font-semibold              
     px-6 py-3                  
     rounded-lg                 
     shadow-md                   
-    hover:bg-gray-800          
+    hover:bg-gray-800 dark:hover:bg-gray-200          
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700
     transition                  
   "

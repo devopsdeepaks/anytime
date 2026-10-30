@@ -25,6 +25,9 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+  #showcase h1 {
+    color: #ffffff !important;
+  }
 }
 
 body {

@@ -100,9 +100,7 @@ export const InfiniteMovingCards = ({
                                 {item.quote}
                             </p>
 
-                            {/* Author Info */}
-                            <div className="relative z-20 mt-6 flex items-center">
-
+                            <div className="relative z-20 mt-6 flex items-center justify-between">
                                 <div className="flex flex-col">
                                     <span className="text-sm font-semibold text-neutral-800 dark:text-gray-100">
                                         {item.name}
@@ -111,6 +109,13 @@ export const InfiniteMovingCards = ({
                                         {item.title}
                                     </span>
                                 </div>
+                                {item.image && (
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-zinc-700 shadow-md"
+                                    />
+                                )}
                             </div>
                         </blockquote>
                     </li>

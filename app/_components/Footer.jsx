@@ -14,7 +14,7 @@ export default function Footer() {
                 {/* Left: Logo and Mission */}
                 <div className="max-w-md text-center lg:text-left">
                     <div className="flex items-center justify-center lg:justify-start mb-4">
-                        <img src="/mainlogo.png" alt="Logo" className="h-10 mr-2" />
+                        <img src="/logo project.jpeg" alt="Logo" className="h-10 w-auto object-contain mr-2 rounded" />
                         <span style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }} className="text-xl font-semibold">Any Time Driver And Taxi Service</span>
                     </div>
                     <p className="text-sm text-gray-300">

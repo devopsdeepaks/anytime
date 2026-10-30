@@ -41,28 +41,33 @@ const testimonials = [
             "I had an urgent meeting and needed a driver at the last minute. Any Time Driver Service was there within 15 minutes! The driver was polite, professional, and knew the quickest routes. Highly recommended!",
         name: "Radha Gupta",
         title: "Booked Taxi",
+        image: "/clients/radha.jpg",
     },
     {
         quote:
             "Good service well sincere driver On time reached customer location. Good nature of any time driver",
         name: "Gagan",
         title: "Booked Driver",
+        image: "/clients/gagan.jpg",
     },
     {
         quote: "I love the service It's really good",
         name: "Meenakshi Parvir",
         title: "Booked Pickup",
+        image: "/clients/meenakshi.jpg",
     },
     {
         quote:
             "The rates are very reasonable, and the service is super convenient. The only thing that could improve is the app's user interface—it’s a bit clunky. But the drivers themselves are excellent!",
         name: "Akanksha Singh",
         title: "Booked Pickup",
+        image: "/clients/akanksha.jpg",
     },
     {
         quote:
             "I got stuck in the middle of nowhere with a flat tire, and Any Time Driver Service saved the day. They sent someone immediately, and the driver even helped me find a repair shop nearby. Couldn’t ask for better service!",
         name: "Arpit Rai",
         title: "Booked Driver",
+        image: "/clients/arpit.jpg",
     },
 ];

@@ -16,13 +16,13 @@ export default function Navbar() {
       <div className="border bg-black/80 backdrop-blur-sm border-black rounded-[8px] sm:rounded-[16px] p-0.5 sm:p-1">
         <div className="px-2 sm:px-10 py-1.5 sm:py-4 rounded-[6px] sm:rounded-[12px] border border-white flex items-center gap-2 sm:gap-12">
           {/* <div className="w-6 h-6 rounded-full border border-white/20" /> */}
-          <div className="w-4 sm:w-8 h-4 sm:h-8 rounded-full border border-white/20">
+          <div className="w-5 sm:w-8 h-5 sm:h-8 rounded-full border border-white/20 overflow-hidden flex items-center justify-center">
             <Image
-              src="/anytimelogo.png"
+              src="/logo project.jpeg"
               alt="Logo"
               width={48}
               height={48}
-              className="opacity-80 rounded-full"
+              className="w-full h-full object-cover rounded-full"
             />
           </div>
 

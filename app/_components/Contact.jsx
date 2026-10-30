@@ -1,31 +1,20 @@
 import React from 'react'
-import { ConfettiButton } from '@/components/confetti'
-//                 </div>
-// import Logo as '/logo1.png'
+
 export default function ContactUsCard() {
     const phoneNumber = '+91-9953384424';
     return (
         <div id='contact' className="max-w-7xl w-full mt-4  sm:mt-20 mx-auto bg-[#F6F6F6] rounded-2xl p-20 shadow-md hover:shadow-lg items-center justify-center transition-shadow">
             <div className="flex flex-col items-center space-y-4">
-                {/* Logo */}
-                <img src='/mainlogog.png' alt="Any Time Driver and Taxi Service Logo" className="h-40 w-auto inline-block bg-[#393939] text-gray-200 text-2xl sm:text-5xl font-semibold px-2 py-2  ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow" />
+                <img src='/logo project.jpeg' alt="Any Time Driver and Taxi Service Logo" className="h-40 w-auto inline-block bg-[#393939] text-gray-200 text-2xl sm:text-5xl font-semibold px-2 py-2 ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow rounded-lg" />
 
-                {/* Title */}
                 <h2 style={{ fontFamily: '"Bricolage Grotesque", sans-serif' }} className="text-4xl font-bold text-[#262626]">Contact US</h2>
 
-                {/* Phone Button */}
                 <a
                     href={`tel:${phoneNumber}`}
                     className="inline-block bg-[#393939] text-gray-200 text-2xl sm:text-5xl font-semibold px-12 py-2 rounded-full ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow"
                 >
-                    <ConfettiButton>{phoneNumber}</ConfettiButton>
-
+                    {phoneNumber}
                 </a>
-                {/* <ConfettiButton
-                    className="mt-4 bg-[#393939] text-gray-200 text-xl font-semibold px-8 py-3 rounded-full ring-2 ring-white shadow-xl hover:shadow-2xl transition-shadow hover:bg-[#4a4a4a]"
-                >
-                    Confetti 🎉
-                </ConfettiButton> */}
             </div>
         </div>
     )
